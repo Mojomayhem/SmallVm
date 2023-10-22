@@ -48,19 +48,19 @@ public class SmallVm {
                 String cmd = inputs[0];
 
                 if(cmd.equals("OUT")){
-                    cmdOut(args[1]);
+                    this.cmdOut(args[1]);
                 } else if (cmd.equals("IN")) {
-                    cmdIn(args[1]);
+                    this.cmdIn(args[1]);
                 } else if (cmd.equals("ADD")) {
-                    cmdAdd(args[1]);
+                    this.cmdAdd(args[1]);
                 } else if (cmd.equals("SUB")) {
-                    cmdSub(inputs);
+                    this.cmdSub(inputs);
                 } else if (cmd.equals("DIV")) {
-                    cmdDiv(inputs);
+                    this.cmdDiv(inputs);
                 } else if (cmd.equals("MUL")) {
-                    cmdMul(inputs);
+                    this.cmdMul(inputs);
                 } else if (cmd.equals("HALT")) {
-                    cmdHalt();
+                    this.cmdHalt();
                 }
             }
         }
